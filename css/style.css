@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+html {
+    color: #222;
+    font-size: 62.5%;
+    line-height: normal;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+textarea {
+    resize: vertical;
+}
+h1,h2,h3,h4,h5,h6,p{
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+}
+a , input[type="submit"] , button , :after , :before{
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+a , input[type="submit"] , button {
+    border: none;
+    cursor: pointer;
+}
+a:focus , input[type="submit"]:focus , button:focus{
+    outline: none;
+}
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+.hidden {
+    display: none !important;
+}
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.clearfix:after {
+    clear: both;
+}
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    p:first-letter,
+    div:first-letter,
+    blockquote:first-letter,
+    li:first-letter,
+    p:first-line,
+    div:first-line,
+    blockquote:first-line,
+    li:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+    img{
+        max-width: 100%;
+    }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+a{
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+a:focus , a:hover{
+    outline: none;
+    text-decoration: none;
+}
+input:focus{
+    outline: none;
+}
+ul{
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+}
+/* header css start */
+.logo{
+    
+}
+.headnav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background: #ff0000;
+    padding: 10px 0;
+    transition: all 0.8s ease-in-out;
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    -ms-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+}
+.headnav .logo{
+    float: left;
+    max-width: 60px;
+}
+.fixed .logo{
+    max-width: 40px;
+}
+.headnav .logo img{
+    transition: all 0.8s ease-in-out;
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    -ms-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;    
+}
+.headnav .nav-panel{
+    float: none;
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+.headnav .nav-panel li{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 6px;
+}
+.headnav .nav-panel li a{
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 7px 15px;
+    border-radius: 5px;
+    border: 2px solid #e70000;
+}
+.headnav .nav-panel li a:hover , .headnav .nav-panel li a.active{
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #fff;
+}
+
+
+.fixed{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background-color: #ff0000;
+    padding: 10px 0;
+    transition: all 0.8s ease-in-out;
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    -ms-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+}
+.fixed .logo img{
+    width: 120px;
+     transition: all 0.8s ease-in-out;
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    -ms-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+}
+.fixed .nav-panel li a{
+    color: #fff;
+}
+.fixed .nav-panel{
+    margin: 13px 0 0 0;
+}
+.login-btn{
+    text-align: right;
+}
+.login-btn a{
+    float: right;
+    margin: 15px 0 0 0;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 7px 15px;
+    border-radius: 5px;
+    background-color: #000;
+}
+.fixed .login-btn a{
+    margin: 8px 0 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* header css end */
+
+/* intro section css start */
+.intro{
+    height: 100vh;
+    background-color: #fff;
+    padding: 53px 0 0 0;
+    position: relative;
+}
+.intro p{
+    position: absolute;
+    transform: translate(-50% , -50%);
+    top: 55%;
+    left: 50%;
+    max-width: 420px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* intro section css end */
+/* get-start css start */
+.get-start{
+    height: 100vh;
+    background-color: pink;
+}
+
+/* get-start css end */
+/* signup page css start */
+.signup{
+    height: 100vh;
+    background-color: magenta;
+}
+
+/* signup page css end */
+/* contact page css start */
+.contact-panel{
+    height: 100vh;
+    background-color: lightgreen;
+}
+
+/* contact page css end */
