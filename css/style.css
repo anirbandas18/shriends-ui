@@ -331,34 +331,62 @@ ul{
 .fixed .login-btn a{
     margin: 8px 0 0 0;
 }
-
-
-
-
-
-
-
-
-
-
-
 /* header css end */
+/* home page css start */
+.homebanner{
+    height: 100vh;
+    padding: 53px 0 0 0;
+    position: relative;
+}
+.homebanner:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: rgba(255,255,255,0.8);
+    top: 0;
+    left: 0;
+}
+.homebanner figure img{
+    width: 100%;
+}
+.homebanner strong{
+    position: absolute;
+    transform: translate(-50% , -50%);
+    -webkit-transform: translate(-50% , -50%);
+    -moz-transform: translate(-50% , -50%);
+    -ms-transform: translate(-50% , -50%);
+    -o-transform: translate(-50% , -50%);
+    top: 55%;
+    left: 50%;
+    max-width: 468px;
+    font-size: 100px;
+    line-height: 110px;
+    color: #000;
+    z-index: 9;
+    text-shadow: -5px 3px 4px #000;
+}
+/* home page css end */
 
 /* intro section css start */
 .intro{
     height: 100vh;
     background-color: #fff;
-    padding: 53px 0 0 0;
     position: relative;
 }
 .intro p{
     position: absolute;
     transform: translate(-50% , -50%);
+    -webkit-transform: translate(-50% , -50%);
+    -moz-transform: translate(-50% , -50%);
+    -ms-transform: translate(-50% , -50%);
+    -o-transform: translate(-50% , -50%);
     top: 55%;
     left: 50%;
-    max-width: 420px;
-    font-size: 20px;
-    line-height: 24px;
+    max-width: 510px;
+    font-size: 24px;
+    line-height: 30px;
     color: #000;
     font-weight: 500;
     text-align: center;
@@ -375,8 +403,137 @@ ul{
 /* signup page css start */
 .signup{
     height: 100vh;
-    background-color: magenta;
+    padding: 8% 0;
 }
+.formwrap{
+    max-width: 1048px;
+    margin: 0 auto;
+}
+.formrow{
+    width: 100%;
+    margin: 0 0 27px 0;
+}
+.formrow .fleft{
+    float: left;
+}
+.formrow .fright{
+    float: right;
+}
+.formrow input[type="text"] , .formrow input[type="password"]{
+    width: 100%;
+    border: 3px solid #3d80cc;
+    padding: 2px 7px;
+    height: 38px;
+    color: #3d80cc;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+}
+.formrow input[type="text"]::-webkit-input-placeholder ,
+.formrow input[type="password"]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #3d80cc;
+  opacity: 1;
+}
+.formrow input[type="text"]::-moz-placeholder ,
+.formrow input[type="password"]::-moz-placeholder { /* Firefox 19+ */
+  color: #3d80cc;
+  opacity: 1;
+}
+.formrow input[type="text"]:-ms-input-placeholder ,
+.formrow input[type="password"]:-ms-input-placeholder { /* IE 10+ */
+  color: #3d80cc;
+  opacity: 1;
+}
+.formrow input[type="text"]:-moz-placeholder ,
+.formrow input[type="password"]:-moz-placeholder { /* Firefox 18- */
+  color: #3d80cc;
+  opacity: 1;
+}
+.radiobtn-wrap{
+    padding: 15px 0 0 0;
+}
+.radiobtn-wrap .fright span.radiolabel{
+    display: inline-block;
+    vertical-align: top;
+}
+.radiobtn-wrap .fright .datewrap{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0 0 6%;
+}
+.radiobtn-wrap .datewrap label{
+    display: block;
+}
+span.radiolabel{
+    display: inline-block;
+    vertical-align: top;
+    color: #3d80cc;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+}
+.radiopanel{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0 0 17%;    
+ }
+input[type="radio"]:checked,
+input[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+input[type="radio"]:checked + label,
+input[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+}
+input[type="radio"]:checked + label:before,
+input[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #3d80cc;
+    border-radius: 100%;
+    background: #fff;
+}
+input[type="radio"]:checked + label:after,
+input[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #3d80cc;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+input[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+input[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+
+
+
+
+
+
 
 /* signup page css end */
 /* contact page css start */

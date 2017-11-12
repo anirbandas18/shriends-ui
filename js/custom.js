@@ -6,6 +6,8 @@ new WOW().init();
         // $(this).toggleClass("cross");
     });
 
+var ptop= $("header").outerHeight(true)
+    $(".homebanner").css("padding-top" , ptop);
 
 $('#home').click(function(){
     $("html, body").animate({ scrollTop: 0 }, 600);
